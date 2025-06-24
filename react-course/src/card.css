@@ -1,0 +1,16 @@
+.card{
+    border: 2px solid black;
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    background-color: crimson;
+    overflow: hidden;
+}
+.cardcontainer{
+    display: flex;
+    gap: 10px;
+}
+.cards{
+    display: flex;
+    gap: 5px;
+}
