@@ -1,0 +1,30 @@
+      callback:
+A callback is a function you pass into another function.
+It get called later when something is done (like a delay,loading data,etc).
+
+
+        Promise:
+A promises is an object that represents the eventual result of an asynchronous operation.
+Think of it as a "promise to do something later".
+states of promises=> 1.pending: it's still working on it
+                     2.Fulfilled: it succeeded,and gave a result
+                     3.Rejected: it failed, and gave an error
+ ex code:
+         let promise = new promise ((resolve,reject)=>
+         {
+            let success=true;
+
+            if (success){
+                resolve("it worked!");
+            }else{
+                reject("it failed");
+            }
+         });
+         promise.then((result)=>{
+            console.log(result); //when resolved
+         })
+         .catch((error)=>{
+            console.log(error); //when Rejected
+         })
+         
+    
